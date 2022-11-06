@@ -22,11 +22,13 @@ body {
   .wiki-content {
     display: flex;
     flex-flow: row-reverse;
-    min-width: 50%;
-    max-width: 50%;
   }
 
   .img-container {
+    min-width: 50%;
+    max-width: 50%;
+  }
+  .wiki-text {
     min-width: 50%;
     max-width: 50%;
   }
@@ -34,7 +36,7 @@ body {
     max-width: 960px;
     margin: 0 auto;
   }
-} 
+}
 
 @media only screen and (max-width: 800px) {
 }
