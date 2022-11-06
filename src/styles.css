@@ -22,6 +22,17 @@ body {
   .wiki-content {
     display: flex;
     flex-flow: row-reverse;
+    min-width: 50%;
+    max-width: 50%;
+  }
+
+  .img-container {
+    min-width: 50%;
+    max-width: 50%;
+  }
+  .container {
+    max-width: 960;
+    margin: 0 auto;
   }
 }
 

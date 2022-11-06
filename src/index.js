@@ -31,6 +31,7 @@ function initializeCode() {
       const dataPromise = await fetch(url);
       const data = await dataPromise.json();
       let body = document.getElementById("body");
+      //body.classList.add("container");
       let img = document.createElement("img");
       img.classList.add("wiki-img");
       let h1 = document.createElement("h1");
@@ -45,6 +46,9 @@ function initializeCode() {
       let div3 = document.createElement("div");
       div3.classList.add("img-container");
 
+      let div4 = document.createElement("div");
+      div4.classList.add("container");
+
       img.src = data.message;
       h1.innerText = dogList[i];
 
@@ -54,6 +58,7 @@ function initializeCode() {
       div2.appendChild(text);
       div1.appendChild(h1);
       div1.appendChild(div2);
+      div4.appendChild(div1);
 
       body.appendChild(div1);
     }
