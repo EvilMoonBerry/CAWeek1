@@ -50,10 +50,10 @@ function initializeCode() {
 
       text.innerText = dogData[i];
       div3.appendChild(img);
+      div2.appendChild(div3);
       div2.appendChild(text);
       div1.appendChild(h1);
       div1.appendChild(div2);
-      div1.appendChild(div3);
 
       body.appendChild(div1);
     }
